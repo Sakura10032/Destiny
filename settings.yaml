@@ -5,7 +5,7 @@ general:
       name: theme_style
       label: 主题样式
       type: select
-      default: Paradox
+      default: 样式一
       options:
         - value: 1
           label: 样式一
@@ -109,8 +109,8 @@ style:
       label: 动态标题（离开再次进入时）
       type: text
 
-    backgroun_image:
-      name: backgroun_image
+    background_image:
+      name: background_image
       label: 风格二背景图
       type: attachment
 
