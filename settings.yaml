@@ -105,17 +105,49 @@ style:
         - value: false
           label: 否
 
-    background_bing:
-      name: background_bing
-      label: Bing 背景
+    dynamic_title:
+      name: dynamic_title
+      label: 开启动态标题
       type: radio
       data-type: bool
-      default: false
+      default: true
       options:
         - value: true
           label: 开启
         - value: false
           label: 关闭
+
+    dynamic_title_leave:
+      name: dynamic_title_leave
+      label: 动态标题（离开页面时）
+      type: text
+
+    dynamic_title_enter:
+      name: dynamic_title_enter
+      label: 动态标题（离开再次进入时）
+      type: text
+
+    backgroun_image:
+      name: backgroun_image
+      label: 风格二背景图
+      type: attachment
+
+    background_filter:
+      name: background_filter
+      label: 风格二背景图模糊值
+      type: text
+
+    site_subtitle:
+      name: site_subtitle
+      label: 站点副标题
+      type: text
+
+    summary:
+      name: summary
+      label: 首页文章摘要字数
+      type: text
+      default: '50'
+      placeholder: '默认不超过80'
 
 sns:
   label: 社交资料
@@ -193,6 +225,12 @@ sns:
 sns-share:
   label: 分享设置
   items:
+    thumb_nail:
+      name: thumb_nail
+      label: 分享缩略图
+      type: attachment
+      placeholder: '在这里填入一个图片 URL 地址，不填也可以'
+
     sns_share_twitter:
       name: sns_share_twitter
       label: 分享到 Twitter
@@ -280,69 +318,32 @@ sns-share:
 other:
   label: 其他设置
   items:
-    other_js_fade:
-      name: other_js_fade
-      label: 渐显效果
-      type: radio
-      data-type: bool
-      default: true
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
+    icp:
+      name: icp
+      label: ICP备案号
+      type: text
 
-    other_js_smoothscroll:
-      name: other_js_smoothscroll
-      label: 平滑滚动效果
-      type: radio
-      data-type: bool
-      default: true
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
+    public_security_record:
+      name: public_security_record
+      label: 网安备案号
+      type: text
 
-    #    other_sidebar_archives:
-    #      name: other_sidebar_archives
-    #      label: 侧边栏归档
-    #      type: radio
-    #      data-type: bool
-    #      default: true
-    #      options:
-    #        - value: true
-    #          label: 开启
-    #        - value: false
-    #          label: 关闭
+    time_statistics:
+      name: time_statistics
+      label: 站点运行时间统计
+      type: text
+      placeholder: '填入起始时间，格式：月/日/年 时:分:秒，如08/20/2018 12:00:00'
 
-    other_sidebar_cates:
-      name: other_sidebar_cates
-      label: 侧边栏分类
-      type: radio
-      data-type: bool
-      default: true
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
+    music_list:
+      name: music_list
+      label: 歌单
+      type: textarea
+      default: ''
+      placeholder: ''
 
-    other_sidebar_postcount:
-      name: other_sidebar_postcount
-      label: 侧边栏文章总数
-      type: radio
-      data-type: bool
-      default: true
-      options:
-        - value: true
-          label: 开启
-        - value: false
-          label: 关闭
-
-    other_mathjax:
-      name: other_mathjax
-      label: MathJax 插件
+    music_autoplay:
+      name: music_autoplay
+      label: 是否开启音乐自动播放
       type: radio
       data-type: bool
       default: false
@@ -352,12 +353,25 @@ other:
         - value: false
           label: 关闭
 
-    other_post_license:
-      name: other_post_license
-      label: 文章 License
-      type: textarea
+    musicList_folded:
+      name: musicList_folded
+      label: 音乐列表折叠
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
 
-    sidebar_footer_content:
-      name: sidebar_footer_content
-      label: 侧边栏底部内容
-      type: textarea
+    qr_code_zfb:
+      name: thumb_nail
+      label: 支付宝二维码链接
+      type: attachment
+
+
+    qr_code_wx:
+      name: thumb_nail
+      label: 微信二维码链接
+      type: attachment
