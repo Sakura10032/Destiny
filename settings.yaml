@@ -61,7 +61,7 @@ style:
       name: theme_style
       label: 主题样式设置
       type: radio
-      data-type: string
+      data-type: bool
       default: 0
       options:
         - value: 0
@@ -73,7 +73,7 @@ style:
       name: back_to_top
       label: 切换页面时滑动到顶部
       type: radio
-      data-type: string
+      data-type: bool
       default: false
       options:
         - value: true
@@ -85,7 +85,7 @@ style:
       name: list_animation
       label: 文章列表展示动画是否重复动画
       type: radio
-      data-type: string
+      data-type: bool
       default: true
       options:
         - value: true
@@ -97,7 +97,7 @@ style:
       name: post_baidu_record
       label: 文章页面是否显示百度收录情况
       type: radio
-      data-type: string
+      data-type: bool
       default: true
       options:
         - value: true
