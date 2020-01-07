@@ -1,5 +1,3 @@
-<#include "/common/macro/common_macro.ftl">
-<#macro header title,keywords,description>
 <!DOCTYPE html>
 <html>
 <head>
