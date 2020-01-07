@@ -11,13 +11,13 @@
 
 # 详情请参考：https://halo.run/develop/theme.html#theme-yaml
 
-id: ruibaby_quickstarter
-name: QuickStarter
+id: sakura_Destiny
+name: sakura_Destiny
 author:
-  name: Ryan Wang
-  website: https://ryanc.cc
-description: Quick starter theme for halo
-logo:
-website: https://github.com/halo-dev/halo-theme-quick-starter
-repo: https://github.com/halo-dev/halo-theme-quick-starter
+  name: sakura
+  website: https://dudulu.sakura10032.club
+description: A other Halo theme
+logo: https://avatars1.githubusercontent.com/u/1811819?s=460&v=4
+website: https://github.com/halo-dev/halo-theme-sakura-Destiny
+repo: https://github.com/halo-dev/halo-theme-sakura-Destiny
 version: 1.0

@@ -1,0 +1,228 @@
+.article-content h1,
+.page-content h1,
+.article-content h2,
+.page-content h2,
+.article-content h3,
+.page-content h3,
+.article-content h4,
+.page-content h4,
+.article-content h5,
+.page-content h5,
+.article-content h6,
+.page-content h6,
+.article-content p,
+.page-content p,
+.article-content pre,
+.page-content pre,
+.article-content blockquote,
+.page-content blockquote,
+.article-content li,
+.page-content li,
+.article-content code,
+.page-content code,
+.article-content img,
+.page-content img,
+.article-content video,
+.page-content video,
+.article-content table {
+    margin: 1.5em 0;
+}
+
+blockquote {
+    font-size: 13px;
+    background: linear-gradient(90deg, #f2f2f2, #ffffff);
+    padding: 10px 20px;
+    border-left: 2px solid #000;
+}
+
+blockquote > p {
+    margin: 0 !important;
+    line-height: 1.5em;
+}
+
+.article-content code,
+.page-content code {
+    max-height: 300px;
+}
+
+.article-content pre > code,
+.page-content pre > code {
+    margin: 0;
+    padding: 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 1.5em;
+    -webkit-overflow-scrolling: touch;
+}
+
+.article-content pre > code::-webkit-scrollbar,
+.page-content pre > code::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.article-content pre > code::-webkit-scrollbar-track,
+.page-content pre > code::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #f1efee;
+}
+
+.article-content pre > code::-webkit-scrollbar-thumb,
+.page-content pre > code::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #cacaca;
+}
+
+.article-content ul code,
+.page-content ul code,
+.article-content p > code,
+.page-content p > code {
+    font-size: 13px;
+    padding: 2px 6px;
+    margin: 0 5px;
+    color: #ff464e;
+    background-color: #fff9ee;
+}
+
+.article-content img,
+.page-content img {
+    max-width: 100%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.article-content img:hover,
+.page-content img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 80px rgba(0, 0, 0, .8)
+}
+
+.article-content video,
+.page-content video {
+    width: 100%;
+}
+
+.article-content ul li,
+.page-content ul li {
+    position: relative;
+    text-indent: 2em;
+}
+
+.article-content ul li:before,
+.page-content ul li:before {
+    content: "";
+    position: absolute;
+    top: .4em;
+    left: 0;
+    height: 3px;
+    width: 3px;
+    border-radius: 50%;
+    border: 2px solid #ff464e;
+    background-color: #fff;
+}
+
+.article-content h1,
+.page-content h1,
+.article-content h2,
+.page-content h2,
+.article-content h3,
+.page-content h3,
+.article-content h4,
+.page-content h4,
+.article-content h5,
+.page-content h5,
+.article-content h6,
+.page-content h6 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.article-content a,
+.page-content a {
+    font-size: 12px;
+    color: #29d;
+    position: relative;
+}
+
+.article-content a:before,
+.page-content a:before {
+    font-family: icomoon;
+    content: '';
+}
+
+.article-content p,
+.page-content p {
+    line-height: 1.5em;
+}
+
+.article-content hr,
+.page-content hr {
+    border: 1px solid #f5f5f5;
+}
+
+.article-content a:after,
+.page-content a:after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 100%;
+    width: 0;
+    border-bottom: 3px solid #d6623d;
+    transition: width 350ms, left 350ms;
+}
+
+.fancybox-a:before, .fancybox-a:after {
+    display: none;
+}
+
+.article-content a:hover:after,
+.page-content a:hover:after {
+    width: 100%;
+    left: 0;
+    transition: width 350ms;
+}
+
+.article-content .fancybox-a,
+.page-content .fancybox-a {
+    border: none;
+    display: contents;
+}
+
+.article-content table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 13px;
+}
+
+.article-content table thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.article-content table th, .article-content table td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #e6e6e6;
+}
+
+.article-content table thead tr {
+    background-color: #f3f3f3;
+}
+
+.article-content table tbody tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+.visible, .replyvisible {
+    font-size: 12px;
+    background: #f8f8f8;
+    padding: 10px 10px 10px 40px;
+}
+
+.visible {
+    color: #f66;
+}

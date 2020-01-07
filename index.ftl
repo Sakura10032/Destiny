@@ -9,7 +9,7 @@
     <ul>
         <#list posts.content as post>
             <li>
-                <a href="/archives/${post.url}">${post.title}</a>
+                <a href="${context!}">${post.title}</a>
             </li>
         </#list>
     </ul>

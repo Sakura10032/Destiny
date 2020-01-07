@@ -1,0 +1,152 @@
+@media (min-width: 768px) {
+    .layout {
+        width: 750px;
+    }
+
+    .sidebar {
+        width: 300px;
+    }
+
+    .sidebar-content {
+        padding: 0 25px;
+    }
+
+    .second-style-article-list, .article-page {
+        margin-left: 325px;
+        margin-bottom: 50px;
+    }
+
+    .second-style-item, .article-page {
+        width: 400px;
+    }
+
+    .article, .page {
+        padding-left: 320px;
+    }
+
+    .img-list img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .layout {
+        width: 950px;
+    }
+
+    .sidebar {
+        width: 400px;
+    }
+
+    .sidebar-content {
+        padding: 0 50px;
+    }
+
+    .second-style-article-list, .article-page {
+        margin-left: 425px;
+    }
+
+    .second-style-item, .article-page {
+        width: 500px;
+    }
+
+    .article, .page {
+        padding-left: 420px;
+    }
+
+    .img-list img {
+        width: 230px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .layout {
+        width: 1100px;
+    }
+
+    .article-directory {
+        display: block;
+    }
+
+    .second-style-article-list, .article-page {
+        margin-left: 500px;
+    }
+
+    .img-list img {
+        width: 186px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .layout {
+        width: 1300px;
+    }
+
+    .second-style-article-list, .article-page {
+        margin-left: 600px;
+    }
+
+    .img-list img {
+        width: 253px;
+    }
+}
+
+@media (max-width: 767px) {
+    .back-to-home, .menu-btn {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        transform: translateX(-100%);
+        background-color: rgba(0, 0, 0, .9);
+    }
+
+    .sidebar-display {
+        transform: translateX(0);
+    }
+
+    .sidebar-time {
+        display: none;
+    }
+
+    .sidebar-content {
+        padding: 50px 20px;
+    }
+
+    .main-position {
+        transform: translateX(100%);
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .home-time {
+        display: block;
+        margin: 30px 0;
+    }
+
+    .post-near-next, .post-near-prev, #touch-to-top {
+        font-size: 18px;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+
+    .img-list img {
+        width: 40%;
+    }
+
+    .comment-form-meta input {
+        width: 100%;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px dashed #bdbdbd;
+    }
+
+    .links-box > li {
+        width: 50% !important;
+    }
+}

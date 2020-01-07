@@ -1,10 +1,363 @@
-# configurations
-# 详情请参考：https://halo.run/develop/theme.html#settings-yaml
-genernal:
-  label: 基本设置
+general:
+  label: 基础设置
   items:
-    index_notice:
-      name: index_notice
-      label: 首页公告
+    scheme:
+      name: scheme
+      label: 主题样式
+      type: select
+      default: Paradox
+      options:
+        - value: Paradox
+          label: Paradox
+        - value: Isolation
+          label: Isolation
+
+    favicon:
+      name: favicon
+      label: Favicon
+      type: attachment
+
+    high_res_favicon:
+      name: high_res_favicon
+      label: 高清 Favicon
+      type: attachment
+
+    apple_touch_icon:
+      name: apple_touch_icon
+      label: IOS 主屏按钮图标
+      type: attachment
+
+    daily_pic:
+      name: daily_pic
+      label: 首页头图
+      type: attachment
+
+    sidebar_header:
+      name: sidebar_header
+      label: Sidebar 顶部图片
+      type: attachment
+
+    footer_image:
+      name: footer_image
+      label: Sidebar 底部图片
+      type: attachment
+
+style:
+  label: 样式设置
+  items:
+    uiux_slogan:
+      name: uiux_slogan
+      label: 首页 Slogan
+      type: text
+      default: 'Hi, nice to meet you'
+
+    uiux_card_elevation:
+      name: uiux_card_elevation
+      label: 卡片深度
+      type: text
+      default: '2'
+
+    theme_style:
+      name: theme_style
+      label: 主题样式设置
+      type: radio
+      data-type: string
+      default: 0
+      options:
+        - value: 0
+          label: 样式一
+        - value: 1
+          label: 样式二
+
+    back_to_top:
+      name: back_to_top
+      label: 切换页面时滑动到顶部
+      type: radio
+      data-type: string
+      default: false
+      options:
+        - value: false
+          label: 否
+        - value: true
+          label: 是
+
+    list_animation:
+      name: list_animation
+      label: 文章列表展示动画是否重复动画
+      type: radio
+      data-type: string
+      default: true
+      options:
+        - value: false
+          label: 否
+        - value: true
+          label: 是
+
+    post_baidu_record:
+      name: post_baidu_record
+      label: 文章页面是否显示百度收录情况
+      type: radio
+      data-type: string
+      default: true
+      options:
+        - value: false
+          label: 否
+        - value: true
+          label: 是
+
+    background_bing:
+      name: background_bing
+      label: Bing 背景
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+sns:
+  label: 社交资料
+  items:
+    sns_email:
+      name: sns_email
+      label: Email
+      type: text
+
+    sns_facebook:
+      name: sns_facebook
+      label: Facebook
+      type: text
+
+    sns_twitter:
+      name: sns_twitter
+      label: Twitter
+      type: text
+
+    sns_googleplus:
+      name: sns_googleplus
+      label: Google +
+      type: text
+
+    sns_weibo:
+      name: sns_weibo
+      label: 微博
+      type: text
+
+    sns_instagram:
+      name: sns_instagram
+      label: Instagram
+      type: text
+
+    sns_tumblr:
+      name: sns_tumblr
+      label: Tumblr
+      type: text
+
+    sns_github:
+      name: sns_github
+      label: Github
+      type: text
+
+    sns_linkedin:
+      name: sns_linkedin
+      label: Linkedin
+      type: text
+
+    sns_zhihu:
+      name: sns_zhihu
+      label: 知乎
+      type: text
+
+    sns_bilibili:
+      name: sns_bilibili
+      label: 哔哩哔哩
+      type: text
+
+    sns_telegram:
+      name: sns_telegram
+      label: Telegram
+      type: text
+
+    sns_v2ex:
+      name: sns_v2ex
+      label: V2EX
+      type: text
+
+    sns_segmentfault:
+      name: sns_segmentfault
+      label: Segmentfault
+      type: text
+
+sns-share:
+  label: 分享设置
+  items:
+    sns_share_twitter:
+      name: sns_share_twitter
+      label: 分享到 Twitter
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    sns_share_facebook:
+      name: sns_share_facebook
+      label: 分享到 Facebook
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    sns_share_googleplus:
+      name: sns_share_googleplus
+      label: 分享到 Google +
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    sns_share_weibo:
+      name: sns_share_weibo
+      label: 分享到微博
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    sns_share_linkedin:
+      name: sns_share_linkedin
+      label: 分享到 Linkedin
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    sns_share_qq:
+      name: sns_share_qq
+      label: 分享到 QQ
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    sns_share_telegram:
+      name: sns_share_telegram
+      label: 分享到 Telegram
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+other:
+  label: 其他设置
+  items:
+    other_js_fade:
+      name: other_js_fade
+      label: 渐显效果
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    other_js_smoothscroll:
+      name: other_js_smoothscroll
+      label: 平滑滚动效果
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    #    other_sidebar_archives:
+    #      name: other_sidebar_archives
+    #      label: 侧边栏归档
+    #      type: radio
+    #      data-type: bool
+    #      default: true
+    #      options:
+    #        - value: true
+    #          label: 开启
+    #        - value: false
+    #          label: 关闭
+
+    other_sidebar_cates:
+      name: other_sidebar_cates
+      label: 侧边栏分类
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    other_sidebar_postcount:
+      name: other_sidebar_postcount
+      label: 侧边栏文章总数
+      type: radio
+      data-type: bool
+      default: true
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    other_mathjax:
+      name: other_mathjax
+      label: MathJax 插件
+      type: radio
+      data-type: bool
+      default: false
+      options:
+        - value: true
+          label: 开启
+        - value: false
+          label: 关闭
+
+    other_post_license:
+      name: other_post_license
+      label: 文章 License
       type: textarea
-      default: '欢迎来到我的博客'
+
+    sidebar_footer_content:
+      name: sidebar_footer_content
+      label: 侧边栏底部内容
+      type: textarea
