@@ -76,10 +76,10 @@ style:
       data-type: string
       default: false
       options:
-        - value: false
-          label: 否
         - value: true
           label: 是
+        - value: false
+          label: 否
 
     list_animation:
       name: list_animation
@@ -88,10 +88,10 @@ style:
       data-type: string
       default: true
       options:
-        - value: false
-          label: 否
         - value: true
           label: 是
+        - value: false
+          label: 否
 
     post_baidu_record:
       name: post_baidu_record
@@ -100,10 +100,10 @@ style:
       data-type: string
       default: true
       options:
-        - value: false
-          label: 否
         - value: true
           label: 是
+        - value: false
+          label: 否
 
     background_bing:
       name: background_bing
