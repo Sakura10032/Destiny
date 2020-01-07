@@ -1,16 +1,16 @@
 general:
   label: 基础设置
   items:
-    scheme:
-      name: scheme
+    theme_style:
+      name: theme_style
       label: 主题样式
       type: select
       default: Paradox
       options:
-        - value: Paradox
-          label: Paradox
-        - value: Isolation
-          label: Isolation
+        - value: 1
+          label: 样式一
+        - value: 2
+          label: 样式二
 
     favicon:
       name: favicon
@@ -50,24 +50,6 @@ style:
       label: 首页 Slogan
       type: text
       default: 'Hi, nice to meet you'
-
-    uiux_card_elevation:
-      name: uiux_card_elevation
-      label: 卡片深度
-      type: text
-      default: '2'
-
-    theme_style:
-      name: theme_style
-      label: 主题样式设置
-      type: radio
-      data-type: bool
-      default: 0
-      options:
-        - value: 0
-          label: 样式一
-        - value: 1
-          label: 样式二
 
     back_to_top:
       name: back_to_top
